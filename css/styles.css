@@ -3,13 +3,14 @@ body {
   flex-direction: column;
   padding-top: 56px;  /* allow enough space for a fixed navbar (56px is the height of the navbar here) */
   min-height: 100vh;  /* i.e minimum width is 100% of the "viewport height"... i.e the full screen height */
+background-color: #99E8FD;
 }
 
 main {
   flex: 1;  /* makes the <main> grow (we want it to grow so that it pushes <footer> to the bottom of page)*/
 }
 
-#carouselExampleIndicators img {
+#carousel img {
   width: 100%;  /* fit the image within the div */
   /* FANCY ADVANCED CSS - calc():
          calculates the height of the full page (100vh)
@@ -17,12 +18,34 @@ main {
          minus the height of the second-navbar (50px)
     allocates this height to the carousel images, so that the carousel, navbar, and second-navbar can all fit on the page (regardless of screen size)
  */
-  height: calc(100vh - 56px - 50px);
+  height: calc(100vh - 10px - 100px);
   object-fit: cover;  /* "object-fit" property has various options for fitting an image within a specified space (works because both the img width and height are specified) */
 }
 
+h2 {
+  color: white;
+}
+
+li {
+  color: white;
+}
+
+.navbar {
+  background-color: #99E8FD;
+}
+body {
+  background-color: #99E8FD;
+}
+
+#meet-the-team img {
+  width: 100%; 
+  height: calc(100vh - 500px - 20px);
+  object-fit: cover;  
+}
+
 #second-navbar {
-  background-color: #dde;
+  background-color:#99E8FD;
+  color: white;
   display: flex;  /* unlocks "flex" property for its children (<a> tags) */
 }
 #second-navbar a {
@@ -34,11 +57,20 @@ main {
 }
 #second-navbar a:hover {
   background-color: rgba(0, 0, 0, 0.1);  /* change color when hover over the link */
+  t
 }
 
 .container {
   padding-top: 60px;
   padding-bottom: 30px;
+}
+
+.list-group {
+  padding-top: 100px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  padding-right: 1000px;
+  color: #99E8FD;
 }
 
 hr {
@@ -56,7 +88,7 @@ hr {
 footer {
   display: flex;  /* allows use of "justify-content" property */
   justify-content: center;  /* horizontally centers the contents (the social icons) */
-  background-color: #666;
+  background-color: #99E8FD;
   height: 100px;
   padding: 20px;
 }
