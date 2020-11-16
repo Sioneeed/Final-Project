@@ -3,7 +3,9 @@ body {
   flex-direction: column;
   padding-top: 56px;  /* allow enough space for a fixed navbar (56px is the height of the navbar here) */
   min-height: 100vh;  /* i.e minimum width is 100% of the "viewport height"... i.e the full screen height */
-background-color: #99E8FD;
+  background-color: #99E8FD;
+  padding-top: 55px;
+ font-family: monospace;
 }
 
 main {
@@ -24,17 +26,11 @@ main {
 
 h2 {
   color: white;
+  font-weight: bolder;
 }
 
 li {
   color: white;
-}
-
-.navbar {
-  background-color: #99E8FD;
-}
-body {
-  background-color: #99E8FD;
 }
 
 #meet-the-team img {
@@ -43,10 +39,16 @@ body {
   object-fit: cover;  
 }
 
+#places img{
+  width: 100%; 
+  height: calc(100vh - 400px - 20px);
+  object-fit: cover; 
+}  
+
 #second-navbar {
   background-color:#99E8FD;
-  color: white;
   display: flex;  /* unlocks "flex" property for its children (<a> tags) */
+  color: white;
 }
 #second-navbar a {
   height: 50px;
@@ -65,24 +67,40 @@ body {
   padding-bottom: 30px;
 }
 
-.list-group {
+.list-group  {
   padding-top: 100px;
   padding-bottom: 30px;
   padding-left: 50px;
-  padding-right: 1000px;
-  color: #99E8FD;
+  padding-right: 1000px;  
+}
+
+.list-group-item {
+  color: #28D2FF;
 }
 
 hr {
-  /* add some fancy styling to the horizontal lines */
   width: 75%;
-  border: 1.5px solid #ddd;
+  border: 1.5px solid white;
   border-radius: 50%;
 }
 
 #meet-the-team img{
   width: 100%;  /* fit the image within the div */
   margin: 15px 0;
+}
+
+
+.card {
+  background-color: #28D2FF
+}
+
+.card-title {
+  color: white;
+  text-shadow: blue;
+}
+
+.card-text {
+  color: white;
 }
 
 footer {
