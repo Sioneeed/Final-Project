@@ -5,7 +5,7 @@ body {
   min-height: 100vh;  /* i.e minimum width is 100% of the "viewport height"... i.e the full screen height */
   background-color: #99E8FD;
   padding-top: 55px;
- font-family: monospace;
+  font-family: monospace;
 }
 
 main {
@@ -28,8 +28,6 @@ h2 {
   color: white;
   font-weight: bolder;
 }
-
-
 
 #meet-the-team img {
   width: 100%; 
