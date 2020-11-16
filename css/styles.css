@@ -29,9 +29,7 @@ h2 {
   font-weight: bolder;
 }
 
-li {
-  color: white;
-}
+
 
 #meet-the-team img {
   width: 100%; 
@@ -67,11 +65,14 @@ li {
   padding-bottom: 30px;
 }
 
+li {
+  color: white;
+}
+
 .list-group  {
-  padding-top: 100px;
   padding-bottom: 30px;
-  padding-left: 50px;
-  padding-right: 1000px;  
+  padding-left: 0px;
+  padding-right: 750px;  
 }
 
 .list-group-item {
