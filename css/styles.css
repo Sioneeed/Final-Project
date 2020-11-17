@@ -2,6 +2,8 @@ body {
   display: flex;  /* setting "display: flex" allows its children (e.g. "main" below) to use the "flex" property */
   flex-direction: column;
   padding-top: 56px;  /* allow enough space for a fixed navbar (56px is the height of the navbar here) */
+  background-color: black;
+  color: #dde;
   min-height: 100vh;  /* i.e minimum width is 100% of the "viewport height"... i.e the full screen height */
 }
 
@@ -33,7 +35,7 @@ main {
   align-items: center; /* vertically centers the contents (the text within) */
 }
 #second-navbar a:hover {
-  background-color: rgba(0, 0, 0, 0.1);  /* change color when hover over the link */
+  background-color: black (0, 0, 0, 0.1);  /* change color when hover over the link */
 }
 
 .container {
